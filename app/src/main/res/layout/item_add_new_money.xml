@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="30dp"
+    android:background="@drawable/bg_rigester"
+    android:backgroundTint="@color/white"
+    android:elevation="200dp"
+    app:cardCornerRadius="30dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_rigester"
+            android:elevation="200dp"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/txt_new_money_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity=""
+                android:scaleType="fitXY"
+                android:src="@drawable/img_money"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_new_money_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:text="اجاره خانه"
+            android:textColor="@color/dark_blue"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_new_money_cost_or_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="پرداختی"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_new_money_cost"
+            app:layout_constraintTop_toBottomOf="@+id/txt_new_money_subject" />
+
+        <TextView
+            android:id="@+id/rial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="ریال"
+            android:textColor="@color/gray_dark"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_new_money_cost"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_new_money_cost_or_income" />
+
+        <TextView
+            android:id="@+id/txt_new_money_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="12000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/rial"
+            app:layout_constraintTop_toBottomOf="@+id/txt_new_money_cost_or_income" />
+
+        <TextView
+            android:layout_marginEnd="110dp"
+            android:layout_marginTop="40dp"
+            android:id="@+id/txt_new_money_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1309/2/2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/update_new_money"
+            app:layout_constraintTop_toBottomOf="@+id/txt_new_money_cost"
+            tools:ignore="UnknownIdInLayout" />
+
+
+        <TextView
+
+            android:id="@+id/txt_new_money_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:30"
+            app:layout_constraintBottom_toBottomOf="@+id/txt_new_money_date"
+            app:layout_constraintEnd_toStartOf="@+id/txt_new_money_date"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_new_money_date" />
+
+        <View
+            android:background="@color/gray_very_light"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/update_new_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="ویرایش"
+            android:textColor="@color/gray_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:backgroundTint="@color/white"
+    android:clickable="true"
+    android:elevation="20dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="12dp"
+    app:rippleColor="?attr/colorPrimary"
+    app:strokeColor="?attr/colorPrimary"
+    app:strokeWidth="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_home_music"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="دکتر محمود حسابی"
+            android:textColor="@color/black_light"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/img_home_music"
+            app:layout_constraintStart_toStartOf="@+id/img_home_music"
+            app:layout_constraintTop_toBottomOf="@+id/img_home_music"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/txt_sub_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="4dp"
+            android:lineSpacingExtra="100dp"
+            android:text="فیزیکدان"
+            android:textColor="@color/black_light"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_music"
+            app:layout_constraintStart_toStartOf="@+id/txt_music"
+            app:layout_constraintTop_toBottomOf="@+id/txt_music" />
+
+        <TextView
+            android:id="@+id/txt_url_music"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/home_main">
+
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.nemomind.fragmentsAll.profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/checkKList"
+        android:name="com.example.nemomind.fragmentsAll.CheckList"
+        android:label="fragment_check_list"
+        tools:layout="@layout/fragment_check_list" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.nemomind.fragmentsAll.login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/home_main"
+        android:name="com.example.nemomind.fragmentsAll.home_main"
+        android:label="fragment_home_main"
+        tools:layout="@layout/fragment_home_main" >
+        <action
+            android:id="@+id/action_home_main_to_note"
+            app:destination="@id/note" />
+        <action
+            android:id="@+id/action_home_main_to_calender"
+            app:destination="@id/calender" />
+        <action
+            android:id="@+id/action_home_main_to_manage_money"
+            app:destination="@id/manage_money" />
+        <action
+            android:id="@+id/action_home_main_to_educationPage"
+            app:destination="@id/educationPage" />
+        <action
+            android:id="@+id/action_home_main_to_music_page"
+            app:destination="@id/music_page" />
+        <action
+            android:id="@+id/action_home_main_to_book_page"
+            app:destination="@id/book_page" />
+        <action
+            android:id="@+id/action_home_main_to_top_man_page"
+            app:destination="@id/top_man_page" />
+        <action
+            android:id="@+id/action_home_main_to_music_show_more"
+            app:destination="@id/music_show_more" />
+        <action
+            android:id="@+id/action_home_main_to_book_show_more"
+            app:destination="@id/book_show_more" />
+        <action
+            android:id="@+id/action_home_main_to_top_man_show_more"
+            app:destination="@id/top_man_show_more" />
+        <action
+            android:id="@+id/action_home_main_to_education_show_more"
+            app:destination="@id/education_show_more" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottom_sheet"
+        android:name="com.example.nemomind.fragmentsAll.bottom_sheet"
+        android:label="fragment_bottom_sheet"
+        tools:layout="@layout/fragment_bottom_sheet" />
+    <fragment
+        android:id="@+id/manage_money"
+        android:name="com.example.nemomind.fragmentsAll.manage_money"
+        android:label="fragment_manage_money"
+        tools:layout="@layout/fragment_manage_money" >
+        <action
+            android:id="@+id/action_manage_money_to_page_money"
+            app:destination="@id/page_money" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/calender"
+        android:name="com.example.nemomind.fragmentsAll.calender"
+        android:label="fragment_calender"
+        tools:layout="@layout/fragment_calender" />
+    <fragment
+        android:id="@+id/note"
+        android:name="com.example.nemomind.fragmentsAll.Note"
+        android:label="fragment_note"
+        tools:layout="@layout/fragment_note" />
+    <fragment
+        android:id="@+id/educationPage"
+        android:name="com.example.nemomind.fragmentsAll.EducationPage"
+        android:label="fragment_education_page"
+        tools:layout="@layout/fragment_education_page" />
+    <fragment
+        android:id="@+id/music_page"
+        android:name="com.example.nemomind.fragmentsAll.music_page"
+        android:label="fragment_music_page"
+        tools:layout="@layout/fragment_music_page" >
+        <argument android:name="musicData" />
+    </fragment>
+    <fragment
+        android:id="@+id/book_page"
+        android:name="com.example.nemomind.fragmentsAll.book_page"
+        android:label="fragment_book_page"
+        tools:layout="@layout/fragment_book_page" />
+    <fragment
+        android:id="@+id/top_man_page"
+        android:name="com.example.nemomind.fragmentsAll.top_man_page"
+        android:label="fragment_top_man_page"
+        tools:layout="@layout/fragment_top_man_page" />
+
+    <fragment
+        android:id="@+id/education_show_more"
+        android:name="com.example.nemomind.fragmentsAll.education_show_more"
+        android:label="fragment_education_show_more"
+        tools:layout="@layout/fragment_education_show_more" >
+        <action
+            android:id="@+id/action_education_show_more_to_educationPage"
+            app:destination="@id/educationPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/music_show_more"
+        android:name="com.example.nemomind.fragmentsAll.music_show_more"
+        android:label="fragment_music_show_more"
+        tools:layout="@layout/fragment_music_show_more" >
+        <action
+            android:id="@+id/action_music_show_more_to_music_page"
+            app:destination="@id/music_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/book_show_more"
+        android:name="com.example.nemomind.fragmentsAll.book_show_more"
+        android:label="fragment_book_show_more"
+        tools:layout="@layout/fragment_book_show_more" >
+        <action
+            android:id="@+id/action_book_show_more_to_book_page"
+            app:destination="@id/book_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/top_man_show_more"
+        android:name="com.example.nemomind.fragmentsAll.top_man_show_more"
+        android:label="fragment_top_man_show_more"
+        tools:layout="@layout/fragment_top_man_show_more" >
+        <action
+            android:id="@+id/action_top_man_show_more_to_top_man_page"
+            app:destination="@id/top_man_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/page_money"
+        android:name="com.example.nemomind.fragmentsAll.page_money"
+        android:label="fragment_page_money"
+        tools:layout="@layout/fragment_page_money" />
+</navigation>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragmentsAll.login">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".fragmentsAll.login">
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="top|end"
+            android:src="@drawable/img_login" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+
+            android:background="@drawable/bg_rigester"
+            android:elevation="200dp"
+            app:cardCornerRadius="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="16dp"
+                    android:text="Login"
+                    android:textAlignment="center"
+                    android:textColor="@color/light_blue"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="        User name "
+                    android:textColorHint="@color/light_blue"
+                    app:boxStrokeColor="@color/light_blue"
+                    app:startIconDrawable="@drawable/ic_user"
+                    app:startIconTint="@color/light_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_username_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="        Email address"
+                    android:textColorHint="@color/light_blue"
+                    app:boxStrokeColor="@color/light_blue"
+                    app:startIconDrawable="@drawable/ic_email"
+                    app:startIconTint="@color/light_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_email_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:hint="        Password"
+                    android:textColorHint="@color/light_blue"
+                    app:boxStrokeColor="@color/light_blue"
+                    app:endIconMode="password_toggle"
+                    app:endIconTint="@color/light_blue"
+                    app:startIconDrawable="@drawable/ic_password"
+                    app:startIconTint="@color/light_blue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/txt_password_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/bg_rigester"
+                    android:backgroundTint="@color/light_blue"
+                    android:clickable="true"
+                    android:text="submit"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>
